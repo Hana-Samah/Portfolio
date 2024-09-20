@@ -19,15 +19,23 @@ A Docker image was created using a `Dockerfile` that specifies the required envi
 #### Steps to Create and Run the Docker Container:
 1. Write the code for the project (HTML, CSS, JS).
 2. Create a `Dockerfile` inside the project directory.
-![Screenshot](./assets/1.png)
+
+   ![Dockerfile Creation](./assets/1.png)
+
 3. Specify the necessary instructions in the `Dockerfile`.
-![Screenshot](./assets/2.png)
+
+   ![Dockerfile Instructions](./assets/2.png)
+
 4. Build the Docker image using the terminal.
-![Screenshot](./assets/3.png)
-![Screenshot](./assets/4.png)
+
+   ![Docker Image Build](./assets/3.png)
+   ![Terminal Output](./assets/4.png)
+
 5. Run the image to start a Docker container.
+
 6. Access the project locally by navigating to `localhost:2000` in a web browser.
-![Screenshot](./assets/5.png)
+
+   ![Accessing Project Locally](./assets/5.png)
 
 ---
 
@@ -36,10 +44,13 @@ After completing the code, the project is pushed to GitHub for version control, 
 
 #### Steps to Upload Code to GitHub:
 1. Create a new GitHub repository.
-![Screenshot](./assets/6.png)
+
+   ![GitHub Repository Creation](./assets/6.png)
+
 2. Open the terminal in the project directory.
 3. Initialize Git, add the project files, and push the code to the repository.
-![Screenshot](./assets/7.png)
+
+   ![Pushing to GitHub](./assets/7.png)
 
 ---
 
@@ -48,15 +59,24 @@ Netlify was used to host and share the project publicly. The platform automates 
 
 #### Steps to Deploy Using Netlify:
 1. Register on Netlify using GitHub.
-![Screenshot](./assets/8.png)
+
+   ![Netlify Registration](./assets/8.png)
+
 2. Add a new site.
-![Screenshot](./assets/9.png)
+
+   ![Adding New Site](./assets/9.png)
+
 3. Select the GitHub repository containing the project.
-![Screenshot](./assets/10.png)
+
+   ![Selecting GitHub Repo](./assets/10.png)
+
 4. Set the site name and click deploy.
-![Screenshot](./assets/11.png)
+
+   ![Deploying Site](./assets/11.png)
+
 5. Share the generated link to make the project accessible to others.
-![Screenshot](./assets/12.png)
+
+   ![Sharing Project Link](./assets/12.png)
 
 ---
 
