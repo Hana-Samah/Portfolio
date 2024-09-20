@@ -77,6 +77,7 @@ Netlify was used to host and share the project publicly. The platform automates 
 5. Share the generated link to make the project accessible to others.
 
    ![Sharing Project Link](./assets/12.png)
+   https://resilient-banoffee-f051e6.netlify.app
 
 ---
 
