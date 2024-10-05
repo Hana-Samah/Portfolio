@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(40, 61, 52);
+  color: rgb(230, 236, 234);
 }
 
 /* TRANSITION */
@@ -46,13 +46,13 @@ nav {
 }
 
 a {
-  color:  rgb(40, 61, 52);
+  color:  rgb(230, 236, 234);
   text-decoration: none;
-  text-decoration-color: rgb(40, 61, 52);
+  text-decoration-color: rgb(230, 236, 234);
 }
 
 a:hover {
-  color:  rgb(91, 124, 109);
+  color:  rgb(190, 196, 193);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(91, 124, 109);
@@ -108,7 +108,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color:  rgb(40, 61, 52);
+  color:  rgb(165, 173, 170);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -160,20 +160,19 @@ section {
 }
 
 /* PROFILE SECTION */
-
+.headr{
+  background-image: url('./assets/bk.jpg');
+  background-size: cover; /* يجعل الصورة تغطي الـ div بالكامل */
+  background-position: center; /* يجعل الصورة تتموضع في منتصف الـ div */
+  background-repeat: no-repeat; /* يمنع تكرار الصورة */
+}
 #profile {
+
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
-
-.section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
 
 .section__text {
   align-self: center;
