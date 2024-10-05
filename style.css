@@ -16,6 +16,9 @@ html {
 }
 
 p {
+  color: rgb(35, 82, 58);
+}
+.headr p {
   color: rgb(230, 236, 234);
 }
 
@@ -46,13 +49,24 @@ nav {
 }
 
 a {
-  color:  rgb(230, 236, 234);
+  color: rgb(58, 77, 70);
+  text-decoration: none;
+  text-decoration-color: rgb(58, 77, 70);
+}
+.headr a {
+  color: rgb(230, 236, 234);
   text-decoration: none;
   text-decoration-color: rgb(230, 236, 234);
 }
 
 a:hover {
-  color:  rgb(190, 196, 193);
+  color: rgb(91, 124, 109);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(91, 124, 109);
+}
+.headr a:hover {
+  color: rgb(190, 196, 193);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(91, 124, 109);
@@ -89,7 +103,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color:  rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
   transition: all 0.3 ease-in-out;
 }
 
@@ -97,7 +111,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color:  rgb(245, 248, 247);
+  background-color: rgb(245, 248, 247);
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -108,7 +122,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color:  rgb(165, 173, 170);
+  color: rgb(165, 173, 170);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -160,14 +174,20 @@ section {
 }
 
 /* PROFILE SECTION */
-.headr{
-  background-image: url('./assets/bk.jpg');
+.headr {
+  background-image: url("./assets/bk.jpg");
   background-size: cover; /* يجعل الصورة تغطي الـ div بالكامل */
   background-position: center; /* يجعل الصورة تتموضع في منتصف الـ div */
   background-repeat: no-repeat; /* يمنع تكرار الصورة */
 }
-#profile {
 
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+#profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -326,84 +346,83 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
-    position: relative;
-  }
-  
-  .experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-  
-  .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .about-containers {
-    display: flex;
-    flex-wrap: wrap; /* Ensure containers can wrap */
-    gap: 2rem; /* Space between details containers */
-  }
-  
-  .details-container {
-    flex: 1; /* Allows containers to grow evenly */
-    min-width: 250px; /* Prevents too narrow containers */
-    background: white; /* Background color for visibility */
-    border-radius: 1rem; /* Rounded corners */
-    padding: 1rem; /* Padding for inner content */
-    border: 1px solid rgb(163, 163, 163); /* Subtle border */
-  }
-  
-  /* Project Details Layout */
-  .article-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 1rem; /* Space between items */
-  }
-  
-  /* PROJECTS SECTION */
-  
-  #projects {
-    position: relative;
-  }
-  
-  .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    border-radius: 1rem; /* Rounded corners for project boxes */
-    padding: 1rem; /* Padding for project content */
-  }
-  
-  .project-img {
-    border-radius: 1rem; /* Rounded corners for images */
-    width: 90%;
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .project-title {
-    margin: 1rem 0; /* Vertical margin for titles */
-    color: black;
-    text-align: center; /* Center title text */
-  }
-  
-  .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-    margin: 0.5rem; /* Spacing around buttons */
-  }
-  
-  /* Ensure buttons are consistently sized */
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Space between buttons */
-  }
-  
-  
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap; /* Ensure containers can wrap */
+  gap: 2rem; /* Space between details containers */
+}
+
+.details-container {
+  flex: 1; /* Allows containers to grow evenly */
+  min-width: 250px; /* Prevents too narrow containers */
+  background: white; /* Background color for visibility */
+  border-radius: 1rem; /* Rounded corners */
+  padding: 1rem; /* Padding for inner content */
+  border: 1px solid rgb(163, 163, 163); /* Subtle border */
+}
+
+/* Project Details Layout */
+.article-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 1rem; /* Space between items */
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  border-radius: 1rem; /* Rounded corners for project boxes */
+  padding: 1rem; /* Padding for project content */
+}
+
+.project-img {
+  border-radius: 1rem; /* Rounded corners for images */
+  width: 90%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.project-title {
+  margin: 1rem 0; /* Vertical margin for titles */
+  color: black;
+  text-align: center; /* Center title text */
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+  margin: 0.5rem; /* Spacing around buttons */
+}
+
+/* Ensure buttons are consistently sized */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+}
+
 /* CONTACT */
 
 #contact {
